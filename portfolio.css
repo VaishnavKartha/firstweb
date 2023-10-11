@@ -1,0 +1,267 @@
+.header1 {
+    height: 70px;
+    /*background: linear-gradient(45deg,#231a73,rgb(6, 2, 31)) ;*/
+    
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+
+
+}
+
+.mail {
+    border: 0px;
+    margin: 0px;
+    width: 100px;
+    height: 100px;
+    padding-left: 20px;
+    padding-top: 50px;
+
+   
+}
+.about {
+    width: 100px;
+    height: 100px;
+    padding-top: 50px;
+}
+.abo {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.contacts {
+    height: 100px;
+    width: 100px;
+    padding-top: 50px;
+
+}
+.contacts h5 {
+    padding-top: -200px;
+}
+.name{
+    font-size: 150px;
+    /*background: linear-gradient(to left,rgba(128, 128, 128, 0.619),#fff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    border: 0px;
+    margin: 0px;
+    animation: slideright 2s linear 1 ;
+   
+    
+}
+
+/*@keyframes slideright{
+    0%{
+        background-position: -2000px 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}*/
+
+#content {
+    padding-left: 30px;
+    /*background-color: #231a73;*/
+    height: 550px;
+    
+    
+}
+
+
+.abo:hover{
+    opacity: 0.5;
+    animation: skewin 2s infinite ease-in-out;
+}
+
+@keyframes skewin{
+    0%{transform: scale(1);}
+    50%{transform: scale(1.5);}
+    100%{transform: scal(1);}
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 0px;
+    border: 0px;
+    height: 230px;
+
+}
+.aboutme {
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 0px;
+    color: #fff;
+    margin: 10px;
+    transform: translateY(15px);
+    text-shadow: 5px 5px black;
+    /*animation: bringin 1s infinite linear;*/
+    
+}
+
+.clgid{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+.clgid:hover{
+    text-decoration: underline;
+   
+
+}
+@keyframes bringin{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+.content{
+    color:#fff;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    
+    
+}
+.new{
+    height: 600px;
+    width: 600px;
+    
+    padding-top: 10px;
+   
+    text-align: left;
+    text-overflow: ellipsis;
+}
+#contents{
+    height: 800px;
+    width: 100%;
+    
+    overflow: hidden;
+}
+.pic2{
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+}
+hr{
+    background: linear-gradient(to right,transparent,#fff,transparent);
+   width: 100%;
+    height: 1px;
+    margin: 1rem 0;
+    border: none;
+    position: relative;
+    top: 550px;
+    z-index: 1;
+}
+.new{
+    animation: blurin 2s 1 ease-in;
+}
+@keyframes blurin{
+    0%{opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+html{
+    scroll-behavior: smooth;
+}
+.name::after{
+    content: 'I am';
+    display: block;
+    margin-left: 15px;
+    
+    
+}
+
+.myname{
+    font-size: 150px;
+   /* background: linear-gradient(to left,rgba(128, 128, 128, 0.619),#fff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    border: 0px;
+    margin: 0px;
+    animation: slideright 2s linear 1 ;
+    position: relative;
+    left: 50px;
+}
+/*body{
+    background-image: url('https://img.freepik.com/free-vector/silhouette-shadow-forest-scene_1308-100939.jpg?size=626&ext=jpg&ga=GA1.2.44520053.1696862770&semt=ais');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x:  hidden;
+    
+    
+}*/
+img{
+    z-index: -10;
+    position: absolute;
+    
+    width: 100%;
+    height: 600px;
+    opacity: 1;
+    overflow-x: hidden;
+}
+#content{
+    position: absolute;
+}
+#header{
+    position: relative;
+    top: 700px;
+}
+.new{
+    position: relative;
+    top: 100px;
+    color: black;
+}
+.content{
+    position: relative;
+    top: 300px;
+    right: 0;
+    transform: translateX(50px);
+
+}
+#contents{
+    background-color: black;
+    position: relative;
+    top: 260px;
+    z-index: -1;
+    
+    
+}
+.aboutme{
+    position: absolute;
+    z-index: 1;
+    top: -50px;
+}
+.name{
+    font-weight:bold;
+    color: #fff;
+}
+.myname{
+    font-weight: bold;
+    color: #d31d1d;
+}
+h1 span{
+    animation: view 2s 1;
+}
+
